@@ -10,5 +10,12 @@
             "url": "https://github.com/adminparry/makati/blob/master/canvas/water.vue",
             "suffix": ".vue"
         }
+    ],
+    "1587823970268": [
+        {
+            "url": "https://github.com/adminparry/makati/blob/master/pull-to-refresh/pull-to-refresh.vue",
+            "suffix": ".vue"
+        }
     ]
+    
 }

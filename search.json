@@ -16,6 +16,12 @@
             "url": "https://github.com/adminparry/makati/blob/master/mobile/pull-to-refresh/pull-to-refresh.vue",
             "suffix": ".vue"
         }
+    ],
+    "express": [
+        {
+            "url": "https://github.com/adminparry/makati/archive/master.zip",
+            "suffix": ".zip"
+        }
     ]
     
 }

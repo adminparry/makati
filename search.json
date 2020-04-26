@@ -22,6 +22,12 @@
             "url": "https://codeload.github.com/adminparry/express-template/zip/master",
             "suffix": ".zip"
         }
+    ],
+    "vue": [
+        {
+            "url": "https://codeload.github.com/adminparry/vue-template/zip/master",
+            "suffix": ".zip"
+        }
     ]
     
 }

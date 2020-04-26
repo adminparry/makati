@@ -19,7 +19,7 @@
     ],
     "express": [
         {
-            "url": "https://github.com/adminparry/makati/archive/master.zip",
+            "url": "https://codeload.github.com/adminparry/makati/zip/master",
             "suffix": ".zip"
         }
     ]

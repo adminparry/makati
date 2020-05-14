@@ -1,6 +1,6 @@
 <template>
     <div class="box-bg">
-        <div class="box-wrap"  @mousedown="down">
+        <div class="box-wrap"  @touchstart="down">
             <div class="box-over" :style="{height: height}"></div>
             <div class="box" :style="{height: height, lineHeight: height}" ref="box">
                 <div v-for="index in month" :class="index == curIndex ? 'light': index - curIndex <  visibleNumber && index - curIndex > -visibleNumber ? '' : 'visible'" :style="webkitTransform(boxWrapHeightHalf, index)" :key="index">{{index + 1 | zero}}</div>
@@ -16,6 +16,7 @@ export default {
             boxWrapHeightHalf:0,
             month:[],
             curIndex: 0,
+            height: 0,
         }
     },
     computed:{
@@ -82,20 +83,26 @@ export default {
         },
         down(ev){
             ev.preventDefault()
-            const { pageX, pageY } = ev || window.event;
-            this.downX = pageX 
-            this.downY = pageY + this.getRotateX()
+            const { pageX, pageY, touches } = ev || window.event;
 
-            document.addEventListener('mousemove', this.move);
-            document.addEventListener('mouseup', this.up);
+            // this.downY = pageY + this.getRotateX()
+            this.downY = touches.item(0).pageY + this.getRotateX()
+            
+            // document.addEventListener('mousemove', this.move);
+            // document.addEventListener('mouseup', this.up);
+            
+            document.addEventListener('touchmove', this.move, { passive: false });
+            document.addEventListener('touchend', this.up, { passive: false });
+            
             clearInterval(this.timer)
         },
         move(ev){
             ev.preventDefault()
-            const { pageX, pageY } = ev || window.event;
+            const { pageX, pageY, touches } = ev || window.event;
 
-            this.moveX = pageX - this.downX;
-            this.moveY = this.downY - pageY;
+
+            // this.moveY = this.downY - pageY;
+            this.moveY = this.downY - touches.item(0).pageY;
 
             if(this.moveY > this.deg * this.len + this.deg)this.moveY = this.deg * this.len + this.deg;
             if(this.moveY < 0 - this.deg*2)this.moveY = 0 - this.deg*2;

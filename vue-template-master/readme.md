@@ -1,5 +1,11 @@
 # vue-template
 
+## 发布
+``` bash
+gh-pages -d dist/
+```
+
+
 ## install
 
 ``` bash

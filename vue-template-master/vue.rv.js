@@ -1,11 +1,13 @@
 // const htmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
-    mode: 'development',
-    // mode: 'production',
-    // output: {
-    //     publicPath: ''
-    // },
+    // mode: 'development',
+    mode: 'production',
+    output: {
+        publicPath: '',
+        filename: '[name].[hash].js',
+        chunkFilename: '[name].[hash].js',
+    },
     module: {
         rules: [
             

@@ -1,7 +1,8 @@
 <template>
     <div class="github-callback">
         <div>
-          <p>{{'success' | capitalize}}</p>
+          <p>{{'success' | capitalize }}</p>
+          <p>{{ 234324324234.88 | number3 }}</p>
           <p><router-link to="/">返回</router-link></p>
         </div>
     </div>

@@ -1,3 +1,4 @@
+// const htmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     mode: 'development',
@@ -7,6 +8,24 @@ module.exports = {
     // },
     module: {
         rules: [
+            
+            {
+                test: /\.styl$/,
+                use: [
+                    {
+                        loader: 'style-loader',
+                    },
+                    {
+                        loader: 'css-loader'
+                    },
+                    {
+                        loader: 'stylus-loader',
+                        options:{
+
+                        }
+                    }
+                ]
+            },
             {
                 test: /\.less$/,
                 use: [

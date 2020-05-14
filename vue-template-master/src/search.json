@@ -3,6 +3,7 @@
         {
             "url": "https://github.com/adminparry/makati/blob/master/vue-template-master/src/components/Water/index.vue",
             "suffix": ".vue",
+            "link": "/demo/water",
             "desc": "vue canvas 水波纹效果"
         }
     ],
@@ -10,16 +11,60 @@
         {
             "url": "https://github.com/adminparry/makati/blob/master/vue-template-master/src/components/PulltoRefresh/index.vue",
             "suffix": ".vue",
+            "link": "/demo/PulltoRefresh",
             "desc": "vue pull-to-refresh"
+        }
+    ],
+    "1588149443348": [
+        {
+            "url": "https://github.com/adminparry/makati/blob/master/vue-template-master/src/components/Slider/index.vue",
+            "suffix": ".vue",
+            "link": "/demo/slider",
+            "desc": "vue 轮播图"
         }
     ],
     "1587970160487": [
         {
             "url": "https://github.com/adminparry/makati/blob/master/vue-template-master/src/components/Calendar/index.vue",
             "suffix": ".vue",
+            "link": "/demo/calendar",
             "desc": "vue 日历"
         }
     ],
+    "1587970160488": [
+        {
+            "url": "https://github.com/adminparry/makati/blob/master/vue-template-master/src/components/Calendar/ios.vue",
+            "suffix": ".vue",
+            "link": "/demo/calendar-ios",
+            "desc": "vue 日历"
+        }
+    ],
+    
+    "1588051008685": [
+        {
+            "url": "https://github.com/adminparry/makati/blob/master/vue-template-master/src/filters/modules/number3.js",
+            "suffix": ".js",
+            "link": "/demo/number3",
+            "desc": "filter 数字千分位"
+        }
+    ],
+    "1588051008686": [
+        {
+            "url": "https://github.com/adminparry/makati/blob/master/vue-template-master/src/filters/modules/date.js",
+            "suffix": ".js",
+            "link": "/demo/date",
+            "desc": "filter 时间格式化"
+        }
+    ],
+    "1588055933195": [
+        {
+            "url": "https://github.com/adminparry/makati/blob/master/vue-template-master/src/assets/js/accelerationIncludingGravity.js",
+            "suffix": ".js",
+            "link": "/demo/gravity",
+            "desc": "js 陀螺仪摇一摇"
+        }
+    ],
+    
     "express": [
         {
             "url": "https://codeload.github.com/adminparry/express-template/zip/master",
@@ -32,6 +77,20 @@
             "url": "https://codeload.github.com/adminparry/vue-template/zip/master",
             "suffix": ".zip",
             "desc": "javascript 一个基于vue的基本结构"
+        }
+    ],
+    "spring": [
+        {
+            "url": "https://codeload.github.com/adminparry/vue-template/zip/master",
+            "suffix": ".zip",
+            "desc": "java 一个基于spring-boot的基本结构"
+        }
+    ],
+    "uniapp": [
+        {
+            "url": "https://codeload.github.com/adminparry/vue-template/zip/master",
+            "suffix": ".zip",
+            "desc": "uniapp 一个基于uniapp的基本结构"
         }
     ]
     

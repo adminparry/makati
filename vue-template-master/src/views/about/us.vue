@@ -4,7 +4,7 @@
     <p class="bash">npm install -g makati</p>
     <p>你需要免配置的工具来运行你的web前端应用</p>
     <p class="bash">npm install -g webpack-rv</p>
-    <p>使用简单 不需要那么多解释 <router-link to="/demo">去选择你想要的东西</router-link></p>
+
     <p>使用简单 不需要那么多解释 <router-link to="/list">去索取你想要的东西</router-link></p>
     
   </div>
